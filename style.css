@@ -242,41 +242,35 @@ p a {
   grid-area: footer;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (max-width: 736px) {
   .titel {
-    font-size: 6em;
+    font-size: 3rem;
   }
 
-  #regels {
+  #deelnemendebibs {
     height: 100%;
-    grid-area: regels;
-    grid-gap: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      ". header"
-      ". text"
-      "knop knop";
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(312deg, #26262b, #222327);
     background-size: 400% 400%;
     -webkit-animation: top 21s ease infinite;
     -moz-animation: top 21s ease infinite;
     animation: top 21s ease infinite;
   }
-
-  .deelnemen {
-    width: 35%;
-  }
-
-  #regels .deelnemen {
+  #deelnemendebibs img {
+    max-width: 250px;
     margin: 50px;
   }
 
+  .deelnemen {
+    width: 70%;
+  }
+
+
   .nav a {
-    margin: 70px;
-    justify-self: center;
+    margin-top: 70px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: white;
   }
