@@ -31,29 +31,25 @@
 }
 
 #over {
-  background: linear-gradient(312deg, #9ea3fc, #8b96f2);
+  background: linear-gradient(312deg, #ffd750, #ffdb11);
+  margin: 40px 0;
   padding: 40px;
   grid-area: over;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 8fr;
+  grid-template-rows: 2fr 2fr 1fr;
   grid-template-areas:
     "header header"
     "text text"
-    "widget widget";
 }
 
-#over .widget {
-  grid-area: widget;
-  width: 80%;
-  justify-self: center;
-}
 
-#regels {
+#deelnemendebibs {
   grid-area: regels;
   grid-gap: 15px;
   padding: 40px;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "header header"
@@ -66,15 +62,11 @@
   animation: top 21s ease infinite;
 }
 
-#regels h2 {
+#deelnemendebibs h2 {
   color: white;
+  text-align: center;
 }
 
-#regels ul {
-  color: #b6bdc6;
-  font-size: 1.1em;
-  font-stretch: 200%;
-}
 
 h2 {
   grid-area: header;
